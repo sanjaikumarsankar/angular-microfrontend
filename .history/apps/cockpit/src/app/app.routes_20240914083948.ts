@@ -9,8 +9,10 @@ export const appRoutes: Route[] = [
       ),
   },
   {
-    path: 'invoice',
+    path: 'contracts',
     loadComponent: () =>
-      import('@angular-monorepo/invoicing').then((m) => m.InvoicingComponent),
+      import('@angular-monorepo/contracting').then(
+        (m) => m.ContractingComponent
+      ),
   },
 ];

@@ -8,9 +8,4 @@ export const appRoutes: Route[] = [
         (m) => m.ContractingComponent
       ),
   },
-  {
-    path: 'invoice',
-    loadComponent: () =>
-      import('@angular-monorepo/invoicing').then((m) => m.InvoicingComponent),
-  },
 ];
